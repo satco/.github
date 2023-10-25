@@ -3,7 +3,7 @@
 This is the README file for the entire Satco project codebase.  
 Useful cross-project information can be shown here.
 
-# Firebase
+## Firebase
 Saturn Web uses Firebase to trigger push notifications to alert users of certain actions:
 -Informs user that the work order that they have opened, has been changed by somebody else.
 
