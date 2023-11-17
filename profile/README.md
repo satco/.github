@@ -13,6 +13,9 @@ It takes some setup and configuration to get it running.
 3 - An "App" must be created (https://console.firebase.google.com/project/[**saturnsatcodevtest**]/settings/general) and the "firebaseConfig" must be added to Saturn Web in the [service worker (dev)](https://github.com/satco/saturn-frontend-angular/blob/master/src/assets-dev/firebase-messaging-sw.js) and the [project's globals file (dev)](https://github.com/satco/saturn-frontend-angular/blob/master/projects/saturn-lib/src/lib/global-dev.ts).  
 4 - Lastly a Web Push certificate must also be generated (https://console.firebase.google.com/project/[**saturnsatcodevtest**]/settings/cloudmessaging) and added to the [firebaseVapidKey property of the project's globals file (dev)](https://github.com/satco/saturn-frontend-angular/blob/master/projects/saturn-lib/src/lib/global-dev.ts).  
 
+## Postman
+This project contains snapshots of Postman 'Data Dumps'.  
+These can be exported/imported to be able to share Postman configurations with all the requests collections and environment/global variables.
 
 
 <!--
