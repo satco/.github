@@ -17,6 +17,13 @@ It takes some setup and configuration to get it running.
 This project contains snapshots of Postman 'Data Dumps'.  
 These can be exported/imported to be able to share Postman configurations with all the requests collections and environment/global variables.
 
+## Deploying Java Projects
+As of December 2023, all the Java projects run as a Service.  
+To compile any project:  
+1 - Inside the projects folder run './mvnw install -Dspring.profiles.active=*environment*', where environment will be *development*, *test*, or *production*.  
+2 - This will generate a .jar file, that should be named appropriately and moved to the correct location. Example: *mv -f /home/jquintela/auth-service/target/auth-service-1.0.0.jar /var/www/auth-service.jar*  
+3 - '/var/www' will have the '*project-name*.jar' and the 'run-*project-name*'.  
+4 - After moving the file, we can restart the Service. Example: *sudo systemctl stop auth.service*, followed by *sudo systemctl start auth.service*.
 
 <!--
 
